@@ -2,6 +2,8 @@ import "./App.css";
 import Home from "./Home";
 import Hospitals from "./Hospitals";
 import Certificate from "./Certificate";
+// import Thanks from './Thanks';
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {

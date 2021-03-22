@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Certificate.css";
 import { Link } from "react-router-dom";
+import FormDetails from "./FormDetails";
+import Thanks from "./Thanks";
 
 function Certificate() {
+  const [temp, setTemp] = useState(false);
+  function hideFn(flag){
+    setTemp(flag);
+  }
+
   return (
     <div className="certificate">
       <div className="certificateTop">
@@ -14,14 +21,8 @@ function Certificate() {
         </Link>
       </div>
       <div className="certificateBottom">
-        <iframe
-          title="certificate"
-          src="https://airtable.com/embed/shrWb6W8lLJflCTf4?backgroundColor=yellow"
-          frameborder="0"
-          onmousewheel=""
-          width="100%"
-          height="100%"
-        ></iframe>
+        {!temp && <FormDetails hideFn={hideFn} />}
+        {temp && <Thanks hideFn={hideFn} />}
       </div>
     </div>
   );

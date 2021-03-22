@@ -32,8 +32,9 @@ function Home() {
           </p>
           <div className="buttonGroup">
             <button onClick={handleClick}>Book Appointment</button>
-
+            <Link to="/certificate" className="certi">
             <button>Certificate</button>
+            </Link>
           </div>
 
           <Menu
