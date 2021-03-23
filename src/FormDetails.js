@@ -22,7 +22,7 @@ function FormDetails(props) {
     e.preventDefault();
     try {
       const response = await fetch(
-        'https://v1.nocodeapi.com/pramodrai/google_sheets/AlIBEXoHkijaJoRg?tabId=Sheet1', {
+        'https://v1.nocodeapi.com/pramodrai/google_sheets/JNnueqGmEovoITnU?tabId=Sheet1', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
