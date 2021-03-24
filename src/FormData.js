@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./FormDetails.css";
-import $ from 'jquery';
 
 function FormDetails(props) {
 
