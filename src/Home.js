@@ -1,20 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 import { Link } from "react-router-dom";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 function Home() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <div className="home">
@@ -50,20 +39,7 @@ function Home() {
             </Link>
           </div>
 
-          <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            <Link to="/hospitals" className="linkButton">
-              <MenuItem onClick={handleClose}>Starcity Hospital</MenuItem>
-            </Link>
-
-            {/* <MenuItem onClick={handleClose}>My account</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem> */}
-          </Menu>
+      
         </div>
         <div className="homeImage"></div>
       </div>
