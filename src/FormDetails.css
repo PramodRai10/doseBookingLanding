@@ -54,9 +54,3 @@ hr {
       width: 100%;
   }
 }
-
-input::-webkit-datetime-edit-month-field,
-    ::-webkit-datetime-edit-day-field,
-    ::-webkit-datetime-edit-text {
-      display:none;
-    }
