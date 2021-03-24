@@ -3,6 +3,7 @@ import "./Home.css";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { Link } from "react-router-dom";
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 function Home() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -31,9 +32,21 @@ function Home() {
             Three easy steps to get yourself vaccinated.
           </p>
           <div className="buttonGroup">
-            <button onClick={handleClick}>Book Appointment</button>
+            <div className="booking">
+              <h5>
+                Book Appointment <ArrowDownwardIcon className="appoint" />
+              </h5>
+              <Link to="/siddhivinayak" className="linkButton">
+                <button>Siddhivinayak Hospital</button>
+              </Link>
+
+              <Link to="/hospitals" className="linkButton">
+                <button>Starcity Hospital</button>
+              </Link>
+            </div>
+
             <Link to="/certificate" className="certi">
-            <button>Certificate</button>
+              <button>Certificate</button>
             </Link>
           </div>
 
@@ -115,7 +128,7 @@ function Home() {
           <li>No extra charges.</li>
         </ul>
       </div>
-      <div className="footer">
+      {/* <div className="footer">
         <div className="footerTop">
           <h1>
             <div className="logo"></div>
@@ -128,12 +141,12 @@ function Home() {
           </div>
           <div className="footerBottom-right">
             <h4>Hospital details</h4>
-             <p>Starcity Hospital</p>
-             <p>Chakki Naka, Kalyan East, 421306</p>
-             <p>Phone:9082274680</p>
+            <p>Starcity Hospital</p>
+            <p>Chakki Naka, Kalyan East, 421306</p>
+            <p>Phone:9082274680</p>
           </div>
-        </div>
-      </div>
+        </div> 
+      </div>*/}
     </div>
   );
 }

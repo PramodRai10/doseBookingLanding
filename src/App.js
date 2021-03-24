@@ -2,9 +2,8 @@ import "./App.css";
 import Home from "./Home";
 import Hospitals from "./Hospitals";
 import Certificate from "./Certificate";
-// import Thanks from './Thanks';
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Siddhivinayak from "./Siddhivinayak";
 
 function App() {
   return (
@@ -13,6 +12,9 @@ function App() {
         <Switch>
           <Route path="/certificate">
             <Certificate />
+          </Route>
+          <Route path="/siddhivinayak">
+            <Siddhivinayak />
           </Route>
 
           <Route path="/hospitals">
