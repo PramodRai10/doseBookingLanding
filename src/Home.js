@@ -17,7 +17,7 @@ function Home() {
         <div className="homeMiddle-left">
           <h2>Welcome to DoseBooking.com</h2>
           <p>
-            This is a vaccination booking portal where you can book appointments for Vaccination. Three easy steps to get yourself vaccinated “Book It, Attend it, Get vaccinated”.
+          This is a vaccination booking portal where you can book appointments for Vaccination. Three easy steps to get yourself vaccinated “Book It, Attend it, Get vaccinated”.
           </p>
           <div className="buttonGroup">
             <div className="booking">
@@ -37,8 +37,6 @@ function Home() {
               <button>Certificate</button>
             </Link>
           </div>
-
-
         </div>
         <div className="homeImage"></div>
       </div>
@@ -103,7 +101,7 @@ function Home() {
           <li>No extra charges.</li>
         </ul>
       </div>
-      {/* <div className="footer">
+      <div className="footer">
         <div className="footerTop">
           <h1>
             <div className="logo"></div>
@@ -115,13 +113,13 @@ function Home() {
             <p>Designed with ❤️ by Qualyval Team</p>
           </div>
           <div className="footerBottom-right">
-            <h4>Hospital details</h4>
-            <p>Starcity Hospital</p>
-            <p>Chakki Naka, Kalyan East, 421306</p>
-            <p>Phone:9082274680</p>
+            <h4> DoseBoooking.com</h4>
+            <p>Contact: 9322745858</p>
+            <p>OR</p>
+            <p>Support@dosebooking.com</p>
           </div>
-        </div> 
-      </div>*/}
+        </div>
+      </div>
     </div>
   );
 }
