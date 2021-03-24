@@ -17,7 +17,7 @@ function Home() {
         <div className="homeMiddle-left">
           <h2>Welcome to DoseBooking.com</h2>
           <p>
-            This a vaccination booking portal where you can keep tract of your vaccination process.
+            This is a vaccination booking portal where you can keep tract of your vaccination process.
             Three easy steps to get yourself vaccinated.
           </p>
           <div className="buttonGroup">

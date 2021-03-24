@@ -61,7 +61,7 @@ function FormDetails(props) {
           </div>
           <div className="details">
             <h3>Year of Birth</h3>
-            <input type="date" name="DOB" value={DOB} onChange={handleChange} />
+            <input type="text" name="DOB" value={DOB} onChange={handleChange} />
           </div>
           <div className="details">
             <h3>Phone number</h3>
