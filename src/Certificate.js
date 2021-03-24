@@ -9,7 +9,7 @@ function Certificate() {
   function hideFn(flag){
     setTemp(flag);
   }
-
+  
   return (
     <div className="certificate">
       <div className="certificateTop">
