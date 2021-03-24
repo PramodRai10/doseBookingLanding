@@ -17,8 +17,7 @@ function Home() {
         <div className="homeMiddle-left">
           <h2>Welcome to DoseBooking.com</h2>
           <p>
-            This is a vaccination booking portal where you can keep tract of your vaccination process.
-            Three easy steps to get yourself vaccinated.
+            This is a vaccination booking portal where you can book appointments for Vaccination. Three easy steps to get yourself vaccinated “Book It, Attend it, Get vaccinated”.
           </p>
           <div className="buttonGroup">
             <div className="booking">
@@ -39,7 +38,7 @@ function Home() {
             </Link>
           </div>
 
-      
+
         </div>
         <div className="homeImage"></div>
       </div>
@@ -62,7 +61,7 @@ function Home() {
           </div>
           <div className="homeCard">
             <div className="vaccinated"></div>
-            <h3>vaccinated</h3>
+            <h3>Vaccinated</h3>
             <p>Get vaccinated at your booked date.</p>
             <br />
             <p>तुमच्या बुक केलेल्या तारखेला लस घ्या.</p>
@@ -70,7 +69,7 @@ function Home() {
         </div>
       </div>
       <div className="youtube">
-        <h1>video tutorial</h1>
+        <h1>Video tutorial</h1>
         <hr />
         <iframe
           title="video-Tutorial"
