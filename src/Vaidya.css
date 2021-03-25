@@ -1,9 +1,9 @@
-.hospitals {
+.vaidya {
   height: 100vh;
   background-color: #fcfdfe;
   overflow-x: hidden;
 }
-.hospitalsTop {
+.vaidyaTop {
   position: sticky;
   border-bottom: 1px solid rgb(224, 224, 224);
   width: 100%;
@@ -12,16 +12,16 @@
   overflow: hidden;
   height: 10vh;
 }
-.hospitalsBottom {
+.vaidyaBottom {
   height: 90vh;
 }
-.hospitalsBottom > iframe {
+.vaidyaBottom > iframe {
   width: 100%;
   height: 105vh !important;
   overflow: hidden;
 }
 
-.hospitalsTop > h1 {
+.vaidyaTop > h1 {
   width: 100%;
   font-size: 15px;
   display: flex;
@@ -40,23 +40,23 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .hospitals {
+  .vaidya {
     height: 100vh;
     background-color: #fcfdfe;
     overflow-y: hidden;
   }
 
-  .hospitalsTop {
+  .vaidyaTop {
     border-bottom: 1px solid rgb(224, 224, 224);
     height: 8vh;
     width: 100%;
     font-family: "Poppins", sans-serif;
   }
-  .hospitalsBottom {
+  .vaidyaBottom {
     height: 92vh;
     width: 100% !important;
   }
-  .hospitalsBottom > iframe {
+  .vaidyaBottom > iframe {
     width: 100% !important;
     height: 100% !important;
   }

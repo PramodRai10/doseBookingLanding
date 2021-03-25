@@ -5,8 +5,8 @@ import "./Siddhivinayak.css";
 function Siddhivinayak() {
   return (
     <div className="siddhivinayak">
-      <div className="hospitalsTop">
-        <Link to="/" className="hospitalsTop">
+      <div className="siddhivinayakTop">
+        <Link to="/" className="siddhivinayakTop">
           <h1>
             <div className="logo"></div>
             DoseBooking.com
@@ -15,7 +15,7 @@ function Siddhivinayak() {
       </div>
       <div className="siddhivinayakBottom">
         <iframe
-          title="siddhivinyak"
+          title="siddhivinayak"
           src="https://calendly.com/dose-booking/siddhivinayak-hospital-vaccine-appointment-clone?embed_domain=siddhivinayak-appointment.dosebooking.com&amp;embed_type=Inline&amp;hide_gdpr_banner=1"
           width="100%"
           height="100%"

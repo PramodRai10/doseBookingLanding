@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 function Home() {
-
   return (
     <div className="home">
       <div className="homeTop">
@@ -12,10 +11,15 @@ function Home() {
           <div className="logo"></div>
           DoseBooking.com
         </h1>
+        <Link to="/certificate" className="certi">
+          <button>Get Certificate</button>
+        </Link>
       </div>
       <div className="homeMiddle">
         <div className="homeMiddle-left">
-          <h2>Welcome to DoseBooking.com</h2>
+          <h2>
+            Welcome to <span> DoseBooking.com</span>
+          </h2>
           <p>
           This is a vaccination booking portal where you can book appointments for Vaccination. Three easy steps to get yourself vaccinated “Book It, Attend it, Get vaccinated”.
           </p>
@@ -24,6 +28,9 @@ function Home() {
               <h5>
                 Book Appointment <ArrowDownwardIcon className="appoint" />
               </h5>
+              <Link to="/vaidya" className="linkButton">
+                <button>CB Vaidya Hospital</button>
+              </Link>
               <Link to="/siddhivinayak" className="linkButton">
                 <button>Siddhivinayak Hospital</button>
               </Link>
@@ -32,10 +39,6 @@ function Home() {
                 <button>Starcity Hospital</button>
               </Link>
             </div>
-
-            <Link to="/certificate" className="certi">
-              <button>Certificate</button>
-            </Link>
           </div>
         </div>
         <div className="homeImage"></div>
@@ -59,7 +62,7 @@ function Home() {
           </div>
           <div className="homeCard">
             <div className="vaccinated"></div>
-            <h3>Vaccinated</h3>
+            <h3>vaccinated</h3>
             <p>Get vaccinated at your booked date.</p>
             <br />
             <p>तुमच्या बुक केलेल्या तारखेला लस घ्या.</p>
@@ -67,7 +70,7 @@ function Home() {
         </div>
       </div>
       <div className="youtube">
-        <h1>Video tutorial</h1>
+        <h1>video tutorial</h1>
         <hr />
         <iframe
           title="video-Tutorial"
@@ -110,11 +113,10 @@ function Home() {
         </div>
         <div className="footerBottom">
           <div className="footerBottom-left">
-           
           </div>
           <div className="footerBottom-right">
             <h4> DoseBoooking.com</h4>
-            <p>Support@dosebooking.com</p>
+            <a href="mailto:Support@dosebooking.com">Support@dosebooking.com</a>
           </div>
         </div>
       </div>
