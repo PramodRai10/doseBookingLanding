@@ -114,8 +114,6 @@ function Home() {
           </div>
           <div className="footerBottom-right">
             <h4> DoseBoooking.com</h4>
-            <p>Contact: 9322745858</p>
-            <p>OR</p>
             <p>Support@dosebooking.com</p>
           </div>
         </div>
