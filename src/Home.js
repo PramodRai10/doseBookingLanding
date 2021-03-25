@@ -109,9 +109,6 @@ function Home() {
           </h1>
         </div>
         <div className="footerBottom">
-          <div className="footerBottom-left">
-            <p>Designed with ❤️ by Qualyval Team</p>
-          </div>
           <div className="footerBottom-right">
             <h4> DoseBoooking.com</h4>
             <p>Support@dosebooking.com</p>
