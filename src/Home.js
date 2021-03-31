@@ -21,23 +21,32 @@ function Home() {
             Welcome to <span> DoseBooking.com</span>
           </h2>
           <p>
-          This is a vaccination booking portal where you can book appointments for Vaccination. Three easy steps to get yourself vaccinated “Book It, Attend it, Get vaccinated”.
+            This is a vaccination booking portal where you can book appointments for Vaccination. Three easy steps to get yourself vaccinated “Book It, Attend it, Get vaccinated”.
           </p>
           <div className="buttonGroup">
             <div className="booking">
               <h5>
                 Book Appointment <ArrowDownwardIcon className="appoint" />
               </h5>
-              <Link to="/vaidya" className="linkButton">
-                <button>CB Vaidya Hospital</button>
-              </Link>
-              <Link to="/siddhivinayak" className="linkButton">
-                <button>Siddhivinayak Hospital</button>
-              </Link>
+              <div className="bookingButton">
+                <div className="bookingButton-left">
+                  <Link to="/vaidya" className="linkButton">
+                    <button>CB Vaidya Hospital</button>
+                  </Link>
+                  <Link to="/siddhivinayak" className="linkButton">
+                    <button>Siddhivinayak Hospital</button>
+                  </Link>
+                </div>
 
-              <Link to="/hospitals" className="linkButton">
-                <button>Starcity Hospital</button>
-              </Link>
+                <div className="bookingButton-right">
+                  <Link to="/hospitals" className="linkButton">
+                    <button>Starcity Hospital</button>
+                  </Link>
+                  <Link to="/isha" className="linkButton">
+                    <button>Isha Netralaya</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -112,10 +121,9 @@ function Home() {
           </h1>
         </div>
         <div className="footerBottom">
-          <div className="footerBottom-left">
-          </div>
+          <div className="footerBottom-left"></div>
           <div className="footerBottom-right">
-            <h4> DoseBoooking.com</h4>
+            <h4>Contact Us</h4>
             <a href="mailto:Support@dosebooking.com">Support@dosebooking.com</a>
           </div>
         </div>
