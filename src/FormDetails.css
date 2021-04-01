@@ -29,6 +29,7 @@ select {
   align-items: center;
   text-align: center;
   margin: 80px;
+  margin-top: 40px;
   color: rgb(0, 68, 85);
 }
 .formDetails> button {
