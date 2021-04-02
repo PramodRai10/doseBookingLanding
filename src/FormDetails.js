@@ -10,8 +10,6 @@ function FormDetails(props) {
   const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
   const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY;
 
-  console.log(SPREADSHEET_ID, SHEET_ID, CLIENT_EMAIL, PRIVATE_KEY);
-
   const [data, setData] = useState({
     Name: '',
     Email: '',
