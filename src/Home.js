@@ -29,25 +29,16 @@ function Home() {
               <h5>
                 Book Appointment <ArrowDownwardIcon className="appoint" />
               </h5>
-              <div className="bookingButton">
-                <div className="bookingButton-left">
-                  <Link to="/vaidya" className="linkButton">
-                    <button>CB Vaidya Hospital</button>
-                  </Link>
-                  <Link to="/siddhivinayak" className="linkButton">
-                    <button>Siddhivinayak Hospital</button>
-                  </Link>
-                </div>
+              <Link to="/vaidya" className="linkButton">
+                <button>CB Vaidya Hospital</button>
+              </Link>
+              <Link to="/siddhivinayak" className="linkButton">
+                <button>Siddhivinayak Hospital</button>
+              </Link>
 
-                <div className="bookingButton-right">
-                  <Link to="/hospitals" className="linkButton">
-                    <button>Starcity Hospital</button>
-                  </Link>
-                  <Link to="/isha" className="linkButton">
-                    <button>Isha Netralaya</button>
-                  </Link>
-                </div>
-              </div>
+              <Link to="/hospitals" className="linkButton">
+                <button>Starcity Hospital</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -79,19 +70,6 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="youtube">
-        <h1>Video tutorial</h1>
-        <hr />
-        <iframe
-          title="video-Tutorial"
-          width="760"
-          height="415"
-          src="https://www.youtube.com/embed/_iq-fy4Kpx4"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div> */}
       <div className="youtube">
         <h1>Video tutorial</h1>
         <hr />
