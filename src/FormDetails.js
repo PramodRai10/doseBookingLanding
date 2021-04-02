@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import "./FormDetails.css";
-import config from './config';
 
 function FormDetails(props) {
   // Config variables
-  const SPREADSHEET_ID = config.spread_sheet_id;
-  const SHEET_ID = config.sheet_id;
-  const CLIENT_EMAIL = config.client_email;
-  const PRIVATE_KEY = config.private_key;
+
+  console.log(process.env);
+  const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
+  const SHEET_ID = process.env.REACT_APP_SHEET_ID;
+  const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
+  const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, '\n');
+  console.log(typeof(SPREADSHEET_ID));
+  console.log(typeof(SHEET_ID));
 
   const [data, setData] = useState({
     Name: '',

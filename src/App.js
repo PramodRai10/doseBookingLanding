@@ -5,7 +5,7 @@ import Certificate from "./Certificate";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Siddhivinayak from "./Siddhivinayak";
 import Vaidya from "./Vaidya";
-import Isha from "./Isha";
+// import Isha from "./Isha";
 import ReactGA from 'react-ga';
 
 function initializeAnalytics(){
@@ -22,9 +22,9 @@ function App() {
           <Route path="/certificate">
             <Certificate />
           </Route>
-          <Route path="/isha">
+          {/* <Route path="/isha">
             <Isha />
-          </Route>
+          </Route> */}
           <Route path="/vaidya">
             <Vaidya />
           </Route>
