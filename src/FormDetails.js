@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import { GoogleSpreadsheet } from "google-spreadsheet";
 import "./FormDetails.css";
+import config from './config';
 
 function FormDetails(props) {
+  // Config variables
+  const SPREADSHEET_ID = config.spread_sheet_id;
+  const SHEET_ID = config.sheet_id;
+  const CLIENT_EMAIL = config.client_email;
+  const PRIVATE_KEY = config.private_key;
 
   const [data, setData] = useState({
     Name: '',
@@ -13,32 +20,38 @@ function FormDetails(props) {
     Vaccination_date: ''
   })
 
+  const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+
+  const appendSpreadsheet = async (row) => {
+    try {
+      await doc.useServiceAccountAuth({
+        client_email: CLIENT_EMAIL,
+        private_key: PRIVATE_KEY,
+      });
+      // loads document properties and worksheets
+      await doc.loadInfo();
+
+      const sheet = doc.sheetsById[SHEET_ID];
+      const result = await sheet.addRow(row);
+      console.log(result);
+      setData({ ...data, Name: '', Email: '', DOB: '1940', AadharId: null, Phone: '', Vaccination_hospital: 'Starcity Hospital', Vaccination_date: '' });
+      props.hideFn(true);
+
+    } catch (e) {
+      console.error('Error: ', e);
+    }
+  };
+
   const { Name, Email, DOB, AadharId, Phone, Vaccination_hospital, Vaccination_date } = data;
 
   const handleChange = (e) => {
-
-    setData({ ...data, [e.target.name]: e.target.value });
+      setData({ ...data, [e.target.name]: e.target.value });
   }
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch(
-        'https://v1.nocodeapi.com/pramodrai/google_sheets/JNnueqGmEovoITnU?tabId=Sheet1', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify([[Name, Email, DOB, AadharId, Phone, Vaccination_hospital, Vaccination_date]])
-      }
-      );
-      await response.json();
-      setData({ ...data, Name: '', Email: '', DOB: '1940', AadharId: null, Phone: '', Vaccination_hospital: 'Starcity Hospital', Vaccination_date: '' });
-      props.hideFn(true);
-
-    } catch (err) {
-      console.log(err);
-    }
+    const newRow = { Name, Email, DOB, AadharId, Phone, Vaccination_hospital, Vaccination_date };
+    appendSpreadsheet(newRow);
   }
 
   return (

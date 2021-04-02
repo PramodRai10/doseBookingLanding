@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 function Home() {
+
   return (
     <div className="home">
       <div className="homeTop">
@@ -78,8 +79,21 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* <div className="youtube">
+        <h1>Video tutorial</h1>
+        <hr />
+        <iframe
+          title="video-Tutorial"
+          width="760"
+          height="415"
+          src="https://www.youtube.com/embed/_iq-fy4Kpx4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div> */}
       <div className="youtube">
-        <h1>video tutorial</h1>
+        <h1>Video tutorial</h1>
         <hr />
         <iframe
           title="video-Tutorial"
