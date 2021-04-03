@@ -32,8 +32,7 @@ function FormDetails(props) {
       await doc.loadInfo();
 
       const sheet = doc.sheetsById[SHEET_ID];
-      const result = await sheet.addRow(row);
-      console.log(result);
+      await sheet.addRow(row);
       setData({ ...data, Name: '', Email: '', DOB: '1940', AadharId: null, Phone: '', Vaccination_hospital: 'Starcity Hospital', Vaccination_date: '' });
       props.hideFn(true);
 

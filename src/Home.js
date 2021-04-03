@@ -78,6 +78,7 @@ function Home() {
           width="760"
           height="415"
           src="https://www.youtube.com/embed/_iq-fy4Kpx4"
+          loading="lazy"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
