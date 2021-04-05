@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Isha.css";
+import "./shwaas.css";
 
 function Isha() {
   return (
@@ -15,8 +15,8 @@ function Isha() {
       </div>
       <div className="ishaBottom">
         <iframe
-          title="isha"
-          src="https://calendly.com/dose-booking/isha-hospital?hide_gdpr_banner=1"
+          title="shwaas"
+          src="https://calendly.com/dose-booking/shwaas-hospital-vaccine-appointment?hide_gdpr_banner=1"
           width="100%"
           height="100%"
           frameborder="0"

@@ -29,16 +29,25 @@ function Home() {
               <h5>
                 Book Appointment <ArrowDownwardIcon className="appoint" />
               </h5>
-              <Link to="/vaidya" className="linkButton">
-                <button>CB Vaidya Hospital</button>
-              </Link>
-              <Link to="/siddhivinayak" className="linkButton">
-                <button>Siddhivinayak Hospital</button>
-              </Link>
+              <div className="bookingButton">
+                <div className="bookingButton-left">
+                  <Link to="/vaidya" className="linkButton">
+                    <button>CB Vaidya Hospital</button>
+                  </Link>
+                  <Link to="/siddhivinayak" className="linkButton">
+                    <button>Siddhivinayak Hospital</button>
+                  </Link>
+                </div>
 
-              <Link to="/hospitals" className="linkButton">
-                <button>Starcity Hospital</button>
-              </Link>
+                <div className="bookingButton-right">
+                  <Link to="/hospitals" className="linkButton">
+                    <button>Starcity Hospital</button>
+                  </Link>
+                  <Link to="/shwaas" className="linkButton">
+                    <button>Shwaas Hospital</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -67,7 +67,7 @@ function FormDetails(props) {
               <option value="CB Vaidya Hospital">CB Vaidya Hospital</option>
               <option value="Siddhivinayak Hospital">Siddhivinayak Hospital</option>
               <option value="Starcity Hospital">Starcity Hospital</option>
-              <option value="Isha Netralaya">Isha Netralaya</option>
+              <option value="Isha Netralaya">Shwaas Hospital</option>
             </select>
           </div>
           <div className="details">
