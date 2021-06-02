@@ -12,6 +12,9 @@ function Home() {
           <div className="logo"></div>
           DoseBooking.com
         </h1>
+        <a href="https://airtable.com/embed/shrf0LyNyWjCd6Nyd?backgroundColor=pinkLight" className="certi">
+          <button>Procurement</button>
+        </a>
         <Link to="/certificate" className="certi">
           <button>Get Certificate</button>
         </Link>
