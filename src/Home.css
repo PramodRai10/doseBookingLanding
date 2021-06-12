@@ -307,7 +307,7 @@
   font-family: "Poppins", sans-serif !important;
   font-size: larger;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .home {
     display: flex;
     flex-direction: column;
@@ -331,10 +331,12 @@
   }
   .homeMiddle {
     flex-direction: column;
+    height: 800px;
   }
   .homeMiddle-left {
     align-items: center;
     width: auto;
+    height: 600px;
   }
   .homeMiddle-left > h2 {
     text-align: center;
@@ -348,7 +350,7 @@
     text-align: center;
   }
   .homeCard {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     width: 55%;
   }
   .cardRow {
