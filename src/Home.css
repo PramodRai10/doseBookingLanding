@@ -18,7 +18,7 @@
   justify-content: space-between;
   padding: 12px 20px;
 }
-@media only screen and (max-width: 478px) {
+/* @media only screen and (max-width: 478px) {
   .homeTop {
     border-bottom: 1px solid rgb(224, 224, 224);
     width: 100%;
@@ -32,7 +32,7 @@
   .certi > button {
     margin-top: 10px;
   }
-}
+} */
 .homeTop > h1 {
   width: 100%;
   font-size: 15px;
@@ -86,8 +86,20 @@
   padding: 5px 20px;
   outline-width: 0;
 }
+.pre-registration > button {
+  margin-top: 15px;
+  cursor: pointer;
+  width: 220px;
+  background-color: rgb(255 255 255);
+  color: rgb(175 0 0 / 90%);
+  font-family: "Poppins", sans-serif;
+  border-radius: 50px;
+  border: 2px solid rgb(0 149 189);
+  padding: 7px 30px;
+  outline-width: 0;
+}
 .buttonGroup {
-  margin-top: 30px;
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   align-items: center;
