@@ -7,7 +7,7 @@ import Siddhivinayak from "./Siddhivinayak";
 import Vaidya from "./Vaidya";
 import Shwaas from "./shwaas";
 import ReactGA from 'react-ga';
-import Pre_Registration from './pre_registration';
+import PreRegistration from './pre_registration';
 
 function initializeAnalytics(){
   ReactGA.initialize("G-VY6V29MQZJ")
@@ -33,7 +33,7 @@ function App() {
             <Siddhivinayak />
           </Route>
           <Route path="/pre_registration">
-            <Pre_Registration />
+            <PreRegistration />
           </Route>
           <Route path="/hospitals">
             <Hospitals />

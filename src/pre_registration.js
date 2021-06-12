@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./pre_registration.css";
 import { Link } from "react-router-dom";
 
-function Pre_Registration() {
+function PreRegistration() {
 
     return (
         <div className="certificate">
@@ -32,4 +32,4 @@ function Pre_Registration() {
     );
 }
 
-export default Pre_Registration;
+export default PreRegistration;
