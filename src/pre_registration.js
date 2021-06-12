@@ -18,12 +18,12 @@ function PreRegistration() {
                 <div className="booking">
                     <div className="bookingButton">
                         <div className="bookingButton-left">
-                            <Link to="" className="linkButton10">
+                            <a href="https://shravan-vaccination.netlify.app/" className="linkButton10">
                                 <button>SHRAVAN Hospital</button>
-                            </Link>
-                            <Link to="" className="linkButton10">
+                            </a>
+                            <a href="https://ncp-vaccination.netlify.app/" className="linkButton10">
                                 <button>NCP Hospital</button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
