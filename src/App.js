@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./Home";
 import Hospitals from "./Hospitals";
 import Certificate from "./Certificate";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Siddhivinayak from "./Siddhivinayak";
 import Vaidya from "./Vaidya";
 import Shwaas from "./shwaas";
