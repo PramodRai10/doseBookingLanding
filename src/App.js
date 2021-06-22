@@ -7,7 +7,7 @@ import Siddhivinayak from "./Siddhivinayak";
 import Vaidya from "./Vaidya";
 import Shwaas from "./shwaas";
 import ReactGA from 'react-ga';
-import PreRegistration from './pre_registration';
+// import PreRegistration from './pre_registration';
 
 function initializeAnalytics(){
   ReactGA.initialize("G-VY6V29MQZJ")
