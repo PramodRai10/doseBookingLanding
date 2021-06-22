@@ -32,9 +32,9 @@ function App() {
           <Route path="/siddhivinayak">
             <Siddhivinayak />
           </Route>
-          <Route path="/pre_registration">
+          {/* <Route path="/pre_registration">
             <PreRegistration />
-          </Route>
+          </Route> */}
           <Route path="/hospitals">
             <Hospitals />
           </Route>

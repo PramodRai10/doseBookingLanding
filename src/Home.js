@@ -26,14 +26,14 @@ function Home() {
           </p>
           <div className="buttonGroup">
             <div className="booking">
-                <div className="bookingButton-left">
+                {/* <div className="bookingButton-left">
                   <a href="https://airtable.com/embed/shrf0LyNyWjCd6Nyd?backgroundColor=pinkLight" className="pre-registration">
                         <button>Procurement</button>
                   </a>
                   <Link to="/pre_registration" className="pre-registration" style={{marginBottom: '15px',}}>
                         <button>Pre-Registrar</button>
                   </Link>
-                </div>
+                </div> */}
               <h5>
                 Book Appointment <ArrowDownwardIcon className="appoint" />
               </h5>
