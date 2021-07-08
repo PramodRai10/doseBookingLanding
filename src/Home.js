@@ -39,21 +39,33 @@ function Home() {
               </h5>
               <div className="bookingButton">
                 <div className="bookingButton-left">
-                  <Link to="/vaidya" className="linkButton">
+                  {/* <Link to="/vaidya" className="linkButton">
                     <button>CB Vaidya Hospital</button>
                   </Link>
                   <Link to="/siddhivinayak" className="linkButton">
                     <button>Siddhivinayak Hospital</button>
-                  </Link>
+                  </Link> */}
+                  <a href="https://cb-vaidya.netlify.app/" className="linkButton">
+                        <button>CB Vaidya Hospital</button>
+                  </a>
+                  <a href="https://siddhivinayak-hospital.netlify.app/" className="linkButton">
+                        <button>Siddhivinayak Hospital</button>
+                  </a>
                 </div>
 
                 <div className="bookingButton-right">
-                  <Link to="/hospitals" className="linkButton">
+                  {/* <Link to="/hospitals" className="linkButton">
                     <button>Starcity Hospital</button>
                   </Link>
                   <Link to="/shwaas" className="linkButton">
                     <button>Shwaas Hospital</button>
-                  </Link>
+                  </Link> */}
+                  <a href="https://san-fernando.netlify.app/" className="linkButton">
+                        <button>San Fernando Hospital</button>
+                  </a>
+                  <a href="https://shwaas-hospital.netlify.app/" className="linkButton">
+                        <button>Shwaas Hospital</button>
+                  </a>
                 </div>
               </div>
             </div>
